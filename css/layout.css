@@ -27,19 +27,40 @@ body { background: #0f0f0f; }
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
+div.background {
+   background: url(klematis.jpg) repeat;
+   border: 2px solid black;
+ }
 
 header {
    position: relative;
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   
+   background: #161415 url(../images/bg-1.jpg) no-repeat top center;
+
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
 }
 
+img-bg-1 {
+   opacity: 0.5;
+   filter: alpha(opacity=50); /* For IE8 and earlier */
+ }
+panel-cover {
+   display: block;
+   position: fixed;
+   z-index: 900;
+   width: 100%;
+   max-width: none;
+   height: 100%;
+   background: url(../images/bg-1.jpg) top left no-repeat #666;
+   background-size: cover
+   
+}
 /* vertically center banner section */
 header:before {
    content: '';
@@ -52,7 +73,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
