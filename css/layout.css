@@ -45,12 +45,15 @@ header {
    text-align: center;
    overflow: hidden;
 }
-
 img-bg-1 {
    opacity: 0.5;
    filter: alpha(opacity=50); /* For IE8 and earlier */
  }
 panel-cover {
+   /* opacity: 0.5;
+   filter: alpha(opacity=50); 
+   filter: blur(100px);
+   -webkit-filter: blur(100px); */
    display: block;
    position: fixed;
    z-index: 900;
